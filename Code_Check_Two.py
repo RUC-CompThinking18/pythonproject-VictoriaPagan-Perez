@@ -9,7 +9,7 @@ whether or not the code is in the parameters of the import.'''
 to ensure they were completely randomized... The website is: www.familyfriendpoems.com, some of the
 categories I explored were 'life poems', 'sad poems', 'death poems', and 'poems on Overcoming Hardship' '''
 
-import time
+import timeit
 import random
 
 #love is pieces of poems that have to do with  adversity in love
@@ -29,6 +29,11 @@ Neigh_Bullies = ["He started to sing as he tackled the thing, That couldn't be d
 #Break_Up has a lot to do with the feeling of losing a significant other, specifically the hurt that they've caused; as opposed to love, which has to do with the feelings of being abandoned almost, and the anger and emptiness that produces.
 Break_Up = ["I can't go on being with you... sometimes I'd rather be dead," , "I will never love you again so let me go," , "You hurt me so bad and it makes me sick," , "I should have pushed harder for it to work," , "Fantasies are nightmares, dreams are like hell," , "With blood all around me, I feel nothing now," , "I didn't know if I could live without you," , "My skin is turning cold, hard and blue," , "I'm sorry you couldn't love me," , "I'm sorry you didn't love me," , "Day by day I wait for you," , "I no longer think, I no longer cry,"]
 
+'''I added  and wrote a 'story' string because of the fact that many people who go through all of these things never seem to tell their story, except for the few like myself.
+This final string is something that I wrote that adds the ownership of these emotions and showing a sort of courage that is associated with telling your own story.
+This also adds onto the narrative in the aspect of the ownership role changing, as this demonstrates that the program/person knows that it/they aren't the only ones
+experiencing these troubles.'''
+Story = ["This is my story." , "This is your story." , "This is her story." , "This is his story." , "This is their story." , "This is our story." , "This is my family's story." , ]
 
 #the total_choice is here to tell the program to choose only ONE random part of the list that I am calling from (not choosing the entire list)
 total_choice = [love , race , religion , depression , Neigh_Bullies , Break_Up]
@@ -41,16 +46,17 @@ def poem():
     chosen = []  #I then created an empty string to output the lines of the poems to.
     total_choice_copy = total_choice
     for lines in range(length):
-        line_type = random.choice(total_choice_copy) #I then told the program to choose  any of the lines in total_choice then to append those to the empty string. I then told the program to return the now full string and then print that out.'''
-        count = random.randint(-1, len(line_type) - 1) #The reason why I
+        line_type = random.choice(total_choice_copy) #I then told the program to choose  any of the lines in total_choice_copy then to append those to the empty string. I then told the program to return the now full string and then print that out.'''
+        count = random.randint(-1, len(line_type) - 1) #I did a count variable because of the fact that I needed a method of selecting the sentences that the program wanted, since it only understands intergers, I needed to use the indices of the strings.
         line = line_type.pop(count)
-        '''I then named a new variable called line. What this does is it takes what was chosen out of the copy of total_choice and it pops it into another string that is labeled line.
-        This stops that line from  being repeated.'''
-        chosen.append(line)
-    days_of_sickness = 1
-    while days_of_sickness <= 4380:
-        return  '\n'.join(chosen)
-        count += 1
-
-
+        '''I then named a new variable called line. What this does is it takes the indices of what was chosen out of 'count' and it pops it into another string that is labeled 'line'.
+        This stops that line from  being repeated, as that index number no longer exists in the original string.'''
+        chosen.append(line) #''' I then told the program that whatever it chose would then be appended to chosen. This gives something to print.'''
+        '''HELP!!!From here down is where I tried to to the loop so that it will
+        print multiple times.'''
+        days_of_sickness = 1
+    while days_of_sickness <= 12:
+        return  '\n'.join(chosen) + '\n' + random.choice(Story) #I added a new string entitled 'Story' which ends each poem with an ownership sentence.
+        #Not only does this differientiate one poem from the next, but it also takes a nameless program and put a humanistic quality that takes the poems
+        # from interesting to almost melancholic and haunting. 
 print poem()
