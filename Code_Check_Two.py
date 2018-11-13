@@ -60,7 +60,7 @@ def poem():
 days_of_sickness = 1
 while days_of_sickness <= 12:
     days_of_sickness += 1
-    print poem()  + '\n'* 4
+    print poem() 
 ''' Check Two Changes:
  1. Added a new string to the whole program
  2. Manually formatted the definition's print output(This took about a week since I am so technologically impaired.)
