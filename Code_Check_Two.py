@@ -52,11 +52,24 @@ def poem():
         '''I then named a new variable called line. What this does is it takes the indices of what was chosen out of 'count' and it pops it into another string that is labeled 'line'.
         This stops that line from  being repeated, as that index number no longer exists in the original string.'''
         chosen.append(line) #''' I then told the program that whatever it chose would then be appended to chosen. This gives something to print.'''
-        '''HELP!!!From here down is where I tried to to the loop so that it will
-        print multiple times.'''
-        days_of_sickness = 1
-    while days_of_sickness <= 12:
         return  '\n'.join(chosen) + '\n' + random.choice(Story) #I added a new string entitled 'Story' which ends each poem with an ownership sentence.
         #Not only does this differientiate one poem from the next, but it also takes a nameless program and put a humanistic quality that takes the poems
-        # from interesting to almost melancholic and haunting. 
-print poem()
+        # from interesting to almost melancholic and haunting.
+
+
+days_of_sickness = 1
+while days_of_sickness <= 12:
+    days_of_sickness += 1
+    print poem()  + '\n'* 4
+''' Check Two Changes:
+ 1. Added a new string to the whole program
+ 2. Manually formatted the definition's print output(This took about a week since I am so technologically impaired.)
+ 3. Added in a while loop to have the poems print 12 times only (since infinately would cause the computer to crash)'''
+
+#days_of_sickness
+#then the while loop
+#while days <=
+#print(poem)
+#days_of_sickness += 1
+#ok so we have the def poem but we don't want multiples in that one. so just return the poem in poem definiton, revert to poem funct. then do whu
+#SO have the while loop in the global scope and call it in the while loop. and days of sickness should
