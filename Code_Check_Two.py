@@ -52,15 +52,14 @@ def poem():
         '''I then named a new variable called line. What this does is it takes the indices of what was chosen out of 'count' and it pops it into another string that is labeled 'line'.
         This stops that line from  being repeated, as that index number no longer exists in the original string.'''
         chosen.append(line) #''' I then told the program that whatever it chose would then be appended to chosen. This gives something to print.'''
-        return  '\n'.join(chosen) + '\n' + random.choice(Story) #I added a new string entitled 'Story' which ends each poem with an ownership sentence.
+    return  '\n'.join(chosen) + '\n' + random.choice(Story) #I added a new string entitled 'Story' which ends each poem with an ownership sentence.
         #Not only does this differientiate one poem from the next, but it also takes a nameless program and put a humanistic quality that takes the poems
         # from interesting to almost melancholic and haunting.
-
 
 days_of_sickness = 1
 while days_of_sickness <= 12:
     days_of_sickness += 1
-    print poem() 
+    print poem()
 ''' Check Two Changes:
  1. Added a new string to the whole program
  2. Manually formatted the definition's print output(This took about a week since I am so technologically impaired.)
