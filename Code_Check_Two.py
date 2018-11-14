@@ -9,7 +9,7 @@ whether or not the code is in the parameters of the import.'''
 to ensure they were completely randomized... The website is: www.familyfriendpoems.com, some of the
 categories I explored were 'life poems', 'sad poems', 'death poems', and 'poems on Overcoming Hardship' '''
 
-import timeit
+import time
 import random
 
 #love is pieces of poems that have to do with  adversity in love
@@ -56,19 +56,19 @@ def poem():
         #Not only does this differientiate one poem from the next, but it also takes a nameless program and put a humanistic quality that takes the poems
         # from interesting to almost melancholic and haunting.
 
-days_of_sickness = 1
-while days_of_sickness <= 12:
-    days_of_sickness += 1
-    print poem()
+'''The reason why I wanted to put in  a while loop is because of the fact that I know that many people who have mental illnesses choose to stay silent and never
+suffer in silence because their illnesses can be seen as a 'weakness' or a sign of fragility. So I wanted my program to have a poem per year that I've been diagnosed with my mental illness.
+In order to achieve this I created a while loop. The reason why I used the while loop is because it can run the code over and over again until it hits the 12th poem.
+This code is also in  the global scope of the code. The reason for this is that the definition already has it's parameters, therefore it cannot handle another equation.
+I also want this entire code to follow this while loop, therefore it has to go in the global scope. '''
+
+years_of_sickness = 1 #The reason why I used years_of_sickness is because that  is how many years I have been diagnosed with all of these illnesses.
+while years_of_sickness <= 12:#I used 12 because I was diagnosed 12 years ago.... This line of code specifically says that as long as the years_of_sickness(iteration of the above code) is less than or equal to 12, to do the following.
+    years_of_sickness += 1#This piece of code is acting as the counter in the code. This is here so that the code doesn't loop infinately, if it did, then the computer would crash.
+    print poem() #This then tells the code that as soon as the code counter hits 12, to print out the code under poem() which is the code that contains all of the strings, counters, and formatting.
 ''' Check Two Changes:
  1. Added a new string to the whole program
  2. Manually formatted the definition's print output(This took about a week since I am so technologically impaired.)
  3. Added in a while loop to have the poems print 12 times only (since infinately would cause the computer to crash)'''
 
-#days_of_sickness
-#then the while loop
-#while days <=
-#print(poem)
-#days_of_sickness += 1
-#ok so we have the def poem but we don't want multiples in that one. so just return the poem in poem definiton, revert to poem funct. then do whu
 #SO have the while loop in the global scope and call it in the while loop. and days of sickness should
