@@ -22,7 +22,10 @@ stories could finish being told.***'''
 to ensure they were completely randomized... The website is: www.familyfriendpoems.com I also , some of the
 categories I explored were 'life poems', 'sad poems', 'death poems', and 'poems on Overcoming Hardship'
 
-International Suicide Hotlines were found at: '''
+International Suicide Hotlines were found at:
+http://ibpf.org/resource/list-international-suicide-hotlines
+"List of International Suicide Hotlines"    from the International Bipolar Foundation
+'''
 
 import time
 import random
